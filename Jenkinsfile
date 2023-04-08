@@ -21,7 +21,7 @@ spec:
       git 'https://github.com/samirathorizon/hellonode.git'
       container('shell') {
         stage('Build a Maven project') {
-          sh '/kaniko/executor  --context `pwd` --destination=hellonode --no-push'
+          sh '/kaniko/executor  --context `pwd` --destination=ibrahim999/hellonode'
         }
       }
     }
